@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from 'firebase';
+import LoginForm from './components/LoginForm';
 import { Header } from './components/common';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
     return (
       <View style={{ flex: 1 }}>
         <Header headerText="Authentication" />
+        <LoginForm />
       </View>
     );
   }
