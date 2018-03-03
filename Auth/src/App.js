@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from 'firebase';
+import {
+  FIREBASE_APIKEY,
+  FIREBASE_AUTH_DOMAIN,
+  FIREBASE_DATABASE_URL,
+  FIREBASE_PROJECT_ID,
+  FIREBASE_STORAGE_BUCKET,
+  FIREBASE_MESSAGING_SENDER_ID
+} from 'react-native-dotenv';
 import LoginForm from './components/LoginForm';
 import { Header } from './components/common';
 
 class App extends Component {
   componentWillMount() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyCo7nFcwaojwYDink3XNCELZAhyRY0vr9g',
-      authDomain: 'auth-reactnavite.firebaseapp.com',
-      databaseURL: 'https://auth-reactnavite.firebaseio.com',
-      projectId: 'auth-reactnavite',
-      storageBucket: 'auth-reactnavite.appspot.com',
-      messagingSenderId: '690678475945'
+      apiKey: FIREBASE_APIKEY,
+      authDomain: FIREBASE_AUTH_DOMAIN,
+      databaseURL: FIREBASE_DATABASE_URL,
+      projectId: FIREBASE_PROJECT_ID,
+      storageBucket: FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: FIREBASE_MESSAGING_SENDER_ID
     });
   }
 
