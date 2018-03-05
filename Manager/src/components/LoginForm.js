@@ -44,7 +44,7 @@ class LoginForm extends Component {
             label="Email"
             placeholder="email@email.com"
             onChangeText={this.onEmailChange.bind(this)}
-            vale={email}
+            value={email}
           />
         </CardSection>
 
