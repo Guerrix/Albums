@@ -15,7 +15,7 @@ import reducers from './reducers';
 import LoginForm from './components/LoginForm';
 
 class App extends Component {
-  componentDidMount() {
+  componentWillMount() {
     const config = {
       apiKey: FIREBASE_APIKEY,
       authDomain: FIREBASE_AUTH_DOMAIN,
